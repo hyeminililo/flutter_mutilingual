@@ -1,0 +1,14 @@
+{
+  "@@last_modified": "2024-01-26T18:27:42.689608",
+  "widgetMessage": "This is a new widget",
+  "@widgetMessage": {
+    "description": "Explains that we will not proceed further until the user presses a key",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appName": "My flutter app",
+  "@appName": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

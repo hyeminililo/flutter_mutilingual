@@ -1,0 +1,13 @@
+{
+  "@@last_modified": "2024-01-26T18:27:42.689608",
+  "widgetMessage": "widget message",
+  "@widgetMessage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appName": "widget message",
+  "@appName": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
