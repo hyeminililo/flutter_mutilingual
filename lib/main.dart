@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_multilingual/i18n/app_localizations.dart';
 import 'package:flutter_multilingual/i18n/messages.dart';
 import 'i18n/messages.dart';
 
-// void main() {
-//   runApp(const MyApp());
-// }
-
-void main() => runApp(const MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 final msg = Messages();
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+  MyApp({super.key});
+  AppLocalizations appLocalizations = AppLocalizations();
+  AppLocalizationDelegate appLocalizationDelegate = AppLocalizationDelegate();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       localizationsDelegates: [
-        AppLocalizationDelegate(),
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
+        appLocalizationDelegate,
+//        GlobalMaterialLocalizations.delegate,
+        //      GlobalWidgetsLocalizations.delegate,
       ],
       supportedLocales: const [Locale("en"), Locale("ko")],
       theme: ThemeData(primarySwatch: Colors.blue),

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'messages_all.dart';
 
 class AppLocalizations {
-  static Future<AppLocalizations> load(Locale locale) {
+  static Future<AppLocalizations> load(Locale locale) async {
     final String name =
         locale.countryCode == null ? locale.languageCode : locale.toString();
     final String localName = Intl.canonicalizedLocale(name);
